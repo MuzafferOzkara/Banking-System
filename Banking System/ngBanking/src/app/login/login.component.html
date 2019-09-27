@@ -1,0 +1,40 @@
+
+
+<body>
+    <div class = 'Login'>
+      
+      <div class = 'header'>
+        
+      </div>
+      
+      
+      <form class = 'formSignin' #loginForm = 'ngForm' (ngSubmit) = 'onSubmit()'>
+        
+        <div class = 'logo'>
+            <div class = 'logoo'>         
+               
+            </div>
+            <div class = 'mat-headline'>Commerce</div>
+        </div>
+          
+        <div class = 'input-mail'>
+          <mat-form-field class="example-full-width"> 
+            <span><i class="material-icons"> person </i><input matInput type = 'email'  name = 'email' placeholder = 'Email' ngModel required></span>
+          </mat-form-field>       
+        </div >
+      
+        <div class = 'input-password'>
+          
+          <mat-form-field class="example-full-width">
+            <span><i class="material-icons"> lock </i><input matInput type = 'password' name = 'password' placeholder = 'Password'  ngModel required></span>
+          </mat-form-field>   
+             
+        </div >
+       
+        <button  mat-raised-button [disabled] = '!loginForm.valid' class = 'button' type = 'submit' >SIGN IN</button> 
+        
+      </form>
+      
+    </div>   
+
+  </body>

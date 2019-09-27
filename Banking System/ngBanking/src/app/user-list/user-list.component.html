@@ -1,0 +1,39 @@
+
+<ul *ngFor="let user of users ">
+  <li>{{user.name}}</li>
+</ul>
+
+
+
+<div class="panel-body">  
+
+    <table  class="table table-hover table-sm" >
+    <tbody>
+       
+           <tr>
+                <th>Student Name</th>  
+                <th>Student Email</th>  
+                <th>Student Branch</th>  
+                <th>Action</th>  
+                  
+            </tr>  
+
+          </tbody>
+         
+        <tbody>  
+             <tr *ngFor="let user of users " >  
+                <td>{{user.name}}</td>  
+                <td>{{user.surname}}</td>  
+                <td>{{user.balance}}</td>  
+                <input type="text" [(ngModel)]="amount">
+                <button (click)="transfer(user)">Gönder</button>
+                
+               
+                
+                  
+                
+              </tr>   
+        </tbody><br>  
+      
+    </table>  
+  </div>  
